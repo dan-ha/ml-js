@@ -1,0 +1,1 @@
+The KNN(k-nearest-neighbor) is a simple, fast, and straightforward classification algorithm.

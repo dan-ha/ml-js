@@ -1,0 +1,22 @@
+{
+  "name": "knn",
+  "version": "1.0.0",
+  "description": "K-nearest-neighbor is a simple, fast, and straightforward classification algorithm.",
+  "main": "index.js",
+  "scripts": {
+    "build-web": "browserify src/index.js -o dist/index.js -t [ babelify --presets [ env ] ]",
+    "build-cli": "browserify src/index.js --node -o dist/index.js -t [ babelify --presets [ env ] ]",
+    "start": "npm run build-cli && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.1.0",
+    "jimp": "^0.2.28"
+  }
+}
