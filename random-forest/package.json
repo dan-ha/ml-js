@@ -1,0 +1,24 @@
+{
+  "name": "random-forest",
+  "version": "1.0.0",
+  "description": "- modern, versatile, robust, accurate and deserves consideration for nearly any classification task you might encounter.",
+  "main": "index.js",
+  "scripts": {
+    "build-web": "browserify src/index.js -o dist/index.js -t [ babelify --presets [ env ] ]",
+    "build-cli": "browserify src/index.js --node -o dist/index.js -t [ babelify --presets [ env ] ]",
+    "start": "yarn build-cli && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browserify": "^15.1.0",
+    "ml-cross-validation": "^1.2.0",
+    "ml-dataset-iris": "^1.0.0",
+    "ml-random-forest": "^1.0.2"
+  }
+}
