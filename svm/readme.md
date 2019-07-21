@@ -1,0 +1,3 @@
+An SVM is numerical classifier that is somewhat similar to the KNN, but it is far more mathematicaly advanced. Instead of comparing test point to other points, SVM attempts to draw boundry lines between the classes of data points. Lines create regions where all points within are considered members. 
+
+SVM is useful in some limited situations, but is not a powerful tool because it requires that the classes be linearly separable and is only binary classifier.
